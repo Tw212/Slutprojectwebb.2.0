@@ -3,13 +3,13 @@
     height: 100vh;
     display: flex;
     display: grid;
-    grid-template-columns: auto auto 5%;
-    grid-template-rows: 100px 1fr 1fr 1fr ;
+    grid-template-columns: auto auto 10%;
+    grid-template-rows: 100px 70px 1fr 1fr 100px ;
     grid-template-areas: 
     "header header header"
+    ". . aside"
     "main main2 aside"
     "main3 main3 aside"
-   
     "footer footer footer";
 }
 .header{
@@ -35,17 +35,33 @@
 }
 .main img{
     margin-top: 10%;
-    width: 60%;
+    width: 80%;
+
 }
+
 
 .main2{
     grid-area: main2;
 }
 .main3{
-    grid-area: ;
+    grid-area: main3;
+    margin-left: 30%;
 }
+.main3 li{
+    list-style-type: none;
+}
+#text1{
+    display: none;
+}
+#text2{
+    display: none;
+}
+
+
+
 .footer{
     grid-area: footer;
+    background-color: var(--Secundary-color);
 }
 .aside{
     grid-area: aside;
