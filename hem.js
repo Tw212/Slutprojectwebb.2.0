@@ -43,3 +43,26 @@ function Pris2(){
         
     }
 }
+
+let l = true;
+
+function Kassa(){
+    if(l){
+        document.getElementById("Kundkassa").style.display = "block"
+        document.getElementById("Albin").style.display = "none"
+        document.getElementById("B-side").style.display = "none"
+        document.getElementById("texth").style.display = "none"
+        document.getElementById("Pris1").style.display = "none"
+        document.getElementById("Pris2").style.display = "none"
+        l = false;
+    }
+    else{
+        document.getElementById("Kundkassa").style.display = "none"
+        document.getElementById("Albin").style.display = "block"
+        document.getElementById("B-side").style.display = "block"
+        document.getElementById("texth").style.display = "block"
+        document.getElementById("Pris1").style.display = "block"
+        document.getElementById("Pris2").style.display = "block"
+        l = true;
+    }
+}
