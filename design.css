@@ -73,6 +73,14 @@
 #sidor{
     display: none;
     grid-area: main;
+    background-color: #eeee;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 20px;
+    height: 200px;
+    width: 150px;
+}
+#sidor li{
+    margin-top: 20px;
 }
 
 #Kundkassa{
@@ -94,4 +102,36 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
+}
+
+
+
+.Flex-Mat{
+    height: 100vh;
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto 10%;
+    grid-template-rows: 100px 2fr 100px ;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+.Mat-main{
+    grid-area: main;
+}
+.Mat-footer{
+    grid-area: footer;
+}
+
+.Mat-main table{
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    border: 1px solid var(--Secundary-color);
+}
+.Mat-main thead{
+    background-color: var(--Footer-color);
 }
