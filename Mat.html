@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="design.css" rel="stylesheet">
+    <script src="Mat.js"></script>
 </head>
 <body>
     <div class="Flex-Mat">
@@ -19,7 +20,7 @@
             </ul>
         </div>
         <div class="Mat-main">
-            <table>
+            <table id="Mat-tabel">
                 <thead>
                     <tr>
                         <th>Namn</th>
@@ -29,28 +30,63 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr onclick="Go('Cevape')">
                         <td>Cevape </td>
                         <td>10</td>
                         <td>1</td>
                         
                     </tr>
 
-                    <tr>
+                    <tr onclick="Go('GrahLonoc')">
                         <td>Grah lonac</td>
                         <td>9,8</td>
                         <td>2</td>
                         
                     </tr>
 
-                    <tr>
+                    <tr onclick="Go('Burek')">
                         <td>Burek</td>
                         <td>9,5</td>
                         <td>3</td>
                         
                     </tr>
+                    <tr onclick="Go('Pljeskavica')">
+                        <td>pljeskavica</td>
+                        <td>9,3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr onclick="Go('Chorba')">
+                        <td>chorba</td>
+                        <td>8,5</td>
+                        <td>5</td>
+                    </tr>
                 </tbody>
             </table>
+         <!--    <div id="Matlista">
+                <ol>
+                    <li ><img id="Cevape" src="https://image.jimcdn.com/app/cms/image/transf/dimension=455x1024:format=jpg/path/sdcd146a3ef2c96c2/image/ifebbbc6f09678d99/version/1599231596/image.jpg" alt=""></li>
+                    <li id="GrahLonoc"><img src="https://sasina-kuhinja.com/wp-content/uploads/2019/10/vojni%C4%8Dki_grah_army_beans.jpg" alt=""></li>
+                    <li id="Burek"><img src="https://shared.cdn.smp.schibsted.com/v2/images/2a622956-6824-4881-b5b6-e6dd817760b7?fit=crop&h=1069&w=1900&s=d75cddf8a9985d666b8d9f889fce04bfc92029f2" alt=""></li>
+                    <li id="Pljeskavica"><img src="https://www.andy-cooks.com/cdn/shop/articles/20241012025815-andy-20cooks-20-20balkan-20burger-20recipe_82374591-90d8-450b-8e28-8df1376f1757.jpg?v=1730097465" alt=""></li>
+                    <li id="Chorba"><img src="https://www.eatingwell.com/thmb/J6rtMS6AmszDKtac4coDQcRfXDA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chicken-chorba-08d68f9fb506430081a3d5a2a8abb4f3.jpg" alt=""></li>
+                </ol>
+            </div> -->
+
+            <div id="Cevape">
+                <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=455x1024:format=jpg/path/sdcd146a3ef2c96c2/image/ifebbbc6f09678d99/version/1599231596/image.jpg" alt="">
+            </div>
+            <div id="GrahLonoc">
+                <img src="https://sasina-kuhinja.com/wp-content/uploads/2019/10/vojni%C4%8Dki_grah_army_beans.jpg" alt="">
+            </div>
+            <div id="Burek">
+                <img src="https://shared.cdn.smp.schibsted.com/v2/images/2a622956-6824-4881-b5b6-e6dd817760b7?fit=crop&h=1069&w=1900&s=d75cddf8a9985d666b8d9f889fce04bfc92029f2" alt="">
+            </div>
+            <div id="Pljeskavica">
+                <img src="https://www.andy-cooks.com/cdn/shop/articles/20241012025815-andy-20cooks-20-20balkan-20burger-20recipe_82374591-90d8-450b-8e28-8df1376f1757.jpg?v=1730097465" alt="">
+            </div>
+            <div  id="Chorba">
+                <img src="https://www.eatingwell.com/thmb/J6rtMS6AmszDKtac4coDQcRfXDA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chicken-chorba-08d68f9fb506430081a3d5a2a8abb4f3.jpg" alt="">
+            </div>
         </div>
     </div>
 </body>

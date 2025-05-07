@@ -135,3 +135,29 @@
 .Mat-main thead{
     background-color: var(--Footer-color);
 }
+
+#Cevape{
+    display: none;
+    width: 400px;
+    background-color: #eeee;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 10px;
+    align-content: center;
+}
+#Cevape img{
+    width: 300px;
+    left: 20%;
+    translate: 20% 0;
+}
+#GrahLonoc{
+    display: none;
+}
+#Burek{
+    display: none;
+}
+#Pljeskavica{
+    display: none;
+}   
+#Chorba{
+    display: none;
+}
