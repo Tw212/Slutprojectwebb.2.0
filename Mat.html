@@ -19,17 +19,25 @@
                 <li><div onclick="darkmode()"><i class='bx bx-moon' ></i></div></li>
             </ul>
         </div>
+        <div id="sidor">
+            <ol>
+                <li><a href="hem.html">Hem</a></li>
+                <li><a href="Spel.html">Spel</a></li>
+                <li><a href="Mat.html">Dobra Mat</a></li>
+                <li><a href="d.html">d</a></li>
+            </ol>
+        </div>
         <div class="Mat-main">
             <table id="Mat-tabel">
-                <thead>
+                <thead style="width: 100%;">
                     <tr>
-                        <th>Namn</th>
-                        <th>Betyg</th>
-                        <th>Rank</th>
+                        <th style="width: 80%;">Namn</th>
+                        <th style="width: 10%;">Betyg</th>
+                        <th style="width: 10%;">Rank</th>
                         
                     </tr>
                 </thead>
-                <tbody>
+                <tbody style="width: 100%;">
                     <tr onclick="Go('Cevape')">
                         <td>Cevape </td>
                         <td>10</td>
@@ -62,31 +70,30 @@
                     </tr>
                 </tbody>
             </table>
-         <!--    <div id="Matlista">
-                <ol>
-                    <li ><img id="Cevape" src="https://image.jimcdn.com/app/cms/image/transf/dimension=455x1024:format=jpg/path/sdcd146a3ef2c96c2/image/ifebbbc6f09678d99/version/1599231596/image.jpg" alt=""></li>
-                    <li id="GrahLonoc"><img src="https://sasina-kuhinja.com/wp-content/uploads/2019/10/vojni%C4%8Dki_grah_army_beans.jpg" alt=""></li>
-                    <li id="Burek"><img src="https://shared.cdn.smp.schibsted.com/v2/images/2a622956-6824-4881-b5b6-e6dd817760b7?fit=crop&h=1069&w=1900&s=d75cddf8a9985d666b8d9f889fce04bfc92029f2" alt=""></li>
-                    <li id="Pljeskavica"><img src="https://www.andy-cooks.com/cdn/shop/articles/20241012025815-andy-20cooks-20-20balkan-20burger-20recipe_82374591-90d8-450b-8e28-8df1376f1757.jpg?v=1730097465" alt=""></li>
-                    <li id="Chorba"><img src="https://www.eatingwell.com/thmb/J6rtMS6AmszDKtac4coDQcRfXDA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chicken-chorba-08d68f9fb506430081a3d5a2a8abb4f3.jpg" alt=""></li>
-                </ol>
-            </div> -->
-
+         
+        
             <div id="Cevape">
                 <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=455x1024:format=jpg/path/sdcd146a3ef2c96c2/image/ifebbbc6f09678d99/version/1599231596/image.jpg" alt="">
+                <p onclick="Return('Cevape')"><i class='bx bx-x'></i>
             </div>
             <div id="GrahLonoc">
                 <img src="https://sasina-kuhinja.com/wp-content/uploads/2019/10/vojni%C4%8Dki_grah_army_beans.jpg" alt="">
+                <p onclick="Return('GrahLonoc')"><i class='bx bx-x'></i></p>
             </div>
             <div id="Burek">
                 <img src="https://shared.cdn.smp.schibsted.com/v2/images/2a622956-6824-4881-b5b6-e6dd817760b7?fit=crop&h=1069&w=1900&s=d75cddf8a9985d666b8d9f889fce04bfc92029f2" alt="">
+                <p onclick="Return('Burek')"><i class='bx bx-x'></i></p>
             </div>
             <div id="Pljeskavica">
                 <img src="https://www.andy-cooks.com/cdn/shop/articles/20241012025815-andy-20cooks-20-20balkan-20burger-20recipe_82374591-90d8-450b-8e28-8df1376f1757.jpg?v=1730097465" alt="">
+                <p onclick="Return('Pljeskavica')"><i class='bx bx-x'></i></p>
             </div>
             <div  id="Chorba">
                 <img src="https://www.eatingwell.com/thmb/J6rtMS6AmszDKtac4coDQcRfXDA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chicken-chorba-08d68f9fb506430081a3d5a2a8abb4f3.jpg" alt="">
+                <p onclick="Return('Chorba')"><i class='bx bx-x'></i></p>
             </div>
+    
+
         </div>
     </div>
 </body>
