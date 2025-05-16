@@ -4,17 +4,17 @@
     display: flex;
     display: grid;
     grid-template-columns: auto auto 10%;
-    grid-template-rows: 100px 70px 1fr 1fr 100px ;
+    grid-template-rows: 100px 70px 1fr 1fr;
     grid-template-areas: 
     "header header header"
     ". . aside"
     "main main2 aside"
-    "main3 main3 aside"
-    "footer footer footer";
+    "main3 main3 aside";
 }
 .header{
     grid-area: header;
-    background-color: var(--Secundary-color);
+    background: #2A7B9B;
+    background: radial-gradient(circle,rgba(42, 123, 155, 1) 0%, rgba(237, 221, 83, 1) 100%);
     display: flex;
     
     justify-content: space-evenly;
@@ -59,10 +59,7 @@
 
 
 
-.footer{
-    grid-area: footer;
-    background-color: var(--Secundary-color);
-}
+
 .aside{
     grid-area: aside;
 }
@@ -78,6 +75,7 @@
     border-radius: 20px;
     height: 200px;
     width: 150px;
+    position: sticky;
 }
 #sidor li{
     margin-top: 20px;
@@ -111,11 +109,11 @@
     display: flex;
     display: grid;
     grid-template-columns: auto auto 10%;
-    grid-template-rows: 100px 2fr 100px ;
+    grid-template-rows: 100px 2fr ;
     grid-template-areas: 
     "header header header"
-    "main main main"
-    "footer footer footer";
+    "main main main";
+    
 }
 
 .Mat-main{
@@ -139,7 +137,7 @@
 
 #Cevape{
     display: none;
-    width: 400px;
+    width: 300px;
     background-color: #eeee;
     box-shadow: 2px 2px 2px gray;
     border-radius: 30px;
@@ -148,7 +146,7 @@
     
 }
 #Cevape img{
-    width: 300px;
+    width: 200px;
     left: 15%;
     translate: 16% 0;
     margin-top: 30px;
@@ -161,13 +159,113 @@
 }
 #GrahLonoc{
     display: none;
+    width: 300px;
+    background-color: #eeee;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 30px;
+    align-content: center;
+    margin-top: 50px; 
+}
+#GrahLonoc img{
+    width: 200px;
+    left: 15%;
+    translate: 16% 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+#GrahLonoc p{
+    font-size: 30px;
+    padding-left: 50px;
 }
 #Burek{
     display: none;
+    width: 300px;
+    background-color: #eeee;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 30px;
+    align-content: center;
+    margin-top: 50px; 
+}
+#Burek img{
+    width: 200px;
+    left: 15%;
+    translate: 16% 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+#Burek p{
+    font-size: 30px;
+    padding-left: 50px;
 }
 #Pljeskavica{
     display: none;
+    width: 300px;
+    background-color: #eeee;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 30px;
+    align-content: center;
+    margin-top: 50px; 
 }   
+#Pljeskavica img{
+    width: 200px;
+    left: 15%;
+    translate: 16% 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+#Pljeskavica p{
+    font-size: 30px;
+    padding-left: 50px;
+}
 #Chorba{
     display: none;
+    width: 300px;
+    background-color: #eeee;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 30px;
+    align-content: center;
+    margin-top: 50px; 
+}
+#Chorba img{
+    width: 200px;
+    left: 15%;
+    translate: 16% 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+#Chorba p{
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+.Spel{
+    height: 100vh;
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto 10%;
+    grid-template-rows: 100px 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "mains mains aside"
+    "main2s main2s main2";
+
+}
+
+.Spel-block{
+    margin-top: 50px;
+    grid-area: mains;
+    height: 500px;
+    width: 100%;
+    
+    border: 1px solid black;
+}
+#AlbinSP img{
+    width: 40px;
+}
+.Viktiga-knappar{
+    grid-area: main2s;
 }
