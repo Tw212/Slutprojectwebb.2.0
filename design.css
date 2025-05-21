@@ -263,6 +263,10 @@
     
     border: 1px solid black;
 }
+#AlbinSP{
+    text-align: center;
+    padding-top: 440px;
+}
 #AlbinSP img{
     width: 40px;
 }
