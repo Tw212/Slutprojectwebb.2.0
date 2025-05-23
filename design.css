@@ -273,3 +273,23 @@
 .Viktiga-knappar{
     grid-area: main2s;
 }
+#bra-mat img{
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+#dålig-mat img{
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+#bra-mat2 img{
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+#bra-mat3 img{
+    float: left;
+    height: 30px;
+    width: 30px;
+}

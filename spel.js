@@ -1,18 +1,22 @@
-let myTimer= setInterval(myTimer, 1000);
-let time = 0;
-let Start = false;
+let tid;
 
-function Start(){
-    Start = true
-    return Start
-}
-
-
-function myTimer() { 
-    if(Start = true)
+function Starta()
+{(function()
     {
-        time++; 
-        document.getElementById("tid").innerHTML = time;
-    }
+        let tids = 0;
+        tid = setInterval(()=>{
+        tids ++;
+        if(tids >= 3)
+        {
+            Spawn();
+            tids = 0;
+        }
+    },1000)
+    })()
+    
 }
-setTimeout(myTimer, 100) 
+
+function Spawn()
+{
+    
+}
