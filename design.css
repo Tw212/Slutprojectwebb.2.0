@@ -4,12 +4,11 @@
     display: flex;
     display: grid;
     grid-template-columns: auto auto 10%;
-    grid-template-rows: 100px 70px 1fr 1fr;
+    grid-template-rows: 100px 70px 1fr;
     grid-template-areas: 
     "header header header"
     ". . aside"
-    "main main2 aside"
-    "main3 main3 aside";
+    "main main2 aside";
 }
 .header{
     grid-area: header;
@@ -43,13 +42,6 @@
 .main2{
     grid-area: main2;
 }
-.main3{
-    grid-area: main3;
-    margin-left: 30%;
-}
-.main3 li{
-    list-style-type: none;
-}
 #text1{
     display: none;
 }
@@ -76,6 +68,7 @@
     height: 200px;
     width: 150px;
     position: sticky;
+    margin-top: 30px;
 }
 #sidor li{
     margin-top: 20px;
@@ -246,50 +239,126 @@
     height: 100vh;
     display: flex;
     display: grid;
-    grid-template-columns: auto auto 10%;
-    grid-template-rows: 100px 3fr 1fr;
+    grid-template-columns: auto auto auto 10%;
+    grid-template-rows: 100px auto auto auto 100px;
     grid-template-areas: 
-    "header header header"
-    "mains mains aside"
-    "main2s main2s main2";
+    "header header header header"
+    "Spelblock Spelblock Spelblock reklam"
+    "Spelblock Spelblock Spelblock reklam"
+    "Spelblock Spelblock Spelblock reklam"
+    "main2s main2s main2s main2s";
 
 }
 
 .Spel-block{
-    margin-top: 50px;
-    grid-area: mains;
-    height: 500px;
-    width: 100%;
-    
+    margin-top: 150px;
+    margin-left: 20px;
+    grid-area: Spelblock;
+    border: 1px black;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: 
+    "r-1 r-2 r-3"
+    "r-4 r-5 r-6"
+    "r-7 r-8 r-9";
+}
+#r-1{
+    grid-area: r-1;
     border: 1px solid black;
 }
-#AlbinSP{
-    text-align: center;
-    padding-top: 440px;
+#r-2{
+    grid-area: r-2;
+    border: 1px solid black;
 }
-#AlbinSP img{
-    width: 40px;
+#r-3{
+    grid-area: r-3;
+    border: 1px solid black;
 }
-.Viktiga-knappar{
+#r-4{
+    grid-area: r-4;
+    border: 1px solid black;
+}
+#r-5{
+    grid-area: r-5;
+    border: 1px solid black;
+}
+#r-6{
+    grid-area: r-6;
+    border: 1px solid black;
+}
+#r-7{
+    grid-area: r-7;
+    border: 1px solid black;
+}
+#r-8{
+    grid-area: r-8;
+    border: 1px solid black;
+}
+#r-9{
+    grid-area: r-9;
+    border: 1px solid black;
+}
+.Viktiga-Knappar{
     grid-area: main2s;
 }
-#bra-mat img{
-    float: left;
-    height: 30px;
-    width: 30px;
+.aside{
+    grid-area: reklam;
 }
-#dålig-mat img{
-    float: left;
-    height: 30px;
-    width: 30px;
+
+
+.L-a{
+    background:  radial-gradient(circle,rgba(42, 123, 155, 1) 0%, rgba(237, 221, 83, 1) 100%);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 300px 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". L-info ."
+    ". . .";
 }
-#bra-mat2 img{
-    float: left;
-    height: 30px;
-    width: 30px;
+
+#L-info{
+    grid-area: L-info;
+    align-items: center;
+    background-color: #eeee;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 20px;
+    padding-left: 40px;
 }
-#bra-mat3 img{
-    float: left;
-    height: 30px;
-    width: 30px;
+
+#error-msg{
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.G-Skappa{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 700px auto;
+    grid-template-areas: 
+    "Headerg Headerg Headerg"
+    "maing maing maing"
+    ". . .";
+}
+#bodys{
+    background: linear-gradient(0deg,rgba(149, 195, 34, 1) 0%, rgba(253, 45, 76, 1) 100%);
+}
+.headerg{
+    grid-area: Headerg;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    height: 100%;
+    
+    
+}
+.maing{
+    grid-area: maing;
+    background-color: white;
+    text-align: center;
 }

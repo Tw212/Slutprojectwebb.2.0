@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="design.css" rel="stylesheet">
+    <script src="Skappa.js"></script>
+</head>
+<body id="bodys">
+    <div class="G-Skappa">
+        <div class="headerg">
+            <h1>Albin Nuhanovic</h1>
+            <h2 onclick="Kassa()"><i class='bx bx-cart'></i> </h2>
+        </div>
+        <div class="maing">
+            <p>För att få se hemsidan behöver du betala!</p>
+            <button onclick="Pris1()" id="Pris1" class="btn">Pris 1</button>
+            <button onclick="Pris2()" id="Pris2" class="btn">Pris 2</button>
+            <div id="text1">Lorem, ipsum dolor.
+                <ol> 
+                    <li>1 månad</li>
+                    <li>100kr</li>
+                </ol>
+                <button onclick="Läggtill1()" class="btn">Lägg till</button>
+            </div>
+            <div id="text2">Lorem, ipsum dolor.
+                <ol> 
+                    <li>12 månad</li>
+                    <li>1000kr</li>
+                </ol>
+                <button onclick="Läggtill2()" class="btn">Lägg till</button>
+            </div>
+        </div>
+        <div id="Kundkassa">
+            <div class="innre-kundkassa">
+            <p>Kundkassa</p>
+            <p>Produkt: <span id="Väljprodukt">Ingen Produkt</span></p>
+            <h2>Summa: <span id="Priskassa">0</span>kr</h2>
+            </div>
+        </div>
+        
+        
+        
+        </div>
+    </div>
+</body>
+</html>
