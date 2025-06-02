@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bildflytt i Grid</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+    .ruta {
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <div data-area="r-1" class="ruta"></div>
+    <div data-area="r-2" class="ruta"></div>
+    <div data-area="r-3" class="ruta"></div>
+    <div data-area="r-4" class="ruta"></div>
+    <div data-area="r-5" class="ruta"></div>
+    <div data-area="r-6" class="ruta"></div>
+    <div data-area="r-7" class="ruta"></div>
+    <div data-area="r-8" class="ruta"></div>
+    <div data-area="r-9" class="ruta"></div>
+  </div>
+
+  <img id="dbild" src="https://via.placeholder.com/100" />
+
+  <button onclick="Starta()">Starta</button>
+
+  <script>
+    let tid;
+    const gen = Värde(); 
+
+    function Starta() {
+      (function() {
+        let tids = 0;
+        tid = setInterval(() => {
+          tids++;
+          if (tids >= 3) {
+            let c = gen.next().value;
+            Spawn(c);
+            tids = 0;
+          }
+        }, 1000);
+      })();
+    }
+
+    function* Värde() {
+      while (true) {
+        yield Math.floor(Math.random() * 9) + 1;
+      }
+    }
+
+    function Spawn(c) {
+      const bild1 = document.getElementById("dbild");
+      const nyPlats = document.querySelector(`[data-area='r-${c}']`);
+      if (bild1 && nyPlats) {
+        nyPlats.appendChild(bild1);
+        bild1.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>

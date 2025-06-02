@@ -299,6 +299,14 @@
     grid-area: r-9;
     border: 1px solid black;
 }
+#dbild{
+    width: 50px;
+    display: none;
+}
+#bbild{
+    width: 50px;
+    display: none;
+}
 .Viktiga-Knappar{
     grid-area: main2s;
 }
