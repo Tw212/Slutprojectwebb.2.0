@@ -22,7 +22,7 @@ function Menu(){
     }
     else{
         document.getElementById("sidor").style.display = "none";
-        document.getElementById("Mat-tabel").style.display = "block"
+        document.getElementById("Mat-tabel").style.display = ""
         a = true
     }
 }

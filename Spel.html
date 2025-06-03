@@ -8,18 +8,24 @@
     <link href="design.css" rel="stylesheet">
     <script src="spel.js"></script>
 </head>
-<body>
+<body id="bs">
     <div class="Spel">
         <div class="header">
             <ul>
                 <li><div onclick="Menu()"><i class='bx bx-menu'></i></div></li> 
-                    <li><div onclick="login()"><i class='bx bx-log-in'></i></div></li>
                         <li><p>Albin Nuhanovic</p></li>
-                    <li><div onclick="Kassa()"><i class='bx bxs-shopping-bag'></i></div></li>
                 <li><div onclick="darkmode()"><i class='bx bx-moon' ></i></div></li>
             </ul>
         </div>
-        <div class="Spel-block">
+        <div id="sidor">
+            <ol>
+                <li><a href="hem.html">Hem</a></li>
+                <li><a href="Spel.html">Spel</a></li>
+                <li><a href="Mat.html">Dobra mat</a></li>
+                <li><a href="d.html">d</a></li>
+            </ol>
+        </div>
+        <div id="Spel-block">
              <img onclick="Minus()" id="dbild" src="saftiga-hamburgare-e1463035643226.png" alt="">
             <img onclick="Plus()" id="bbild" src="d1da34402d5cc405a02285aef061ef092d1cd42263c4cc433620a1c015edb99c.png" alt="">
             <div id="r-1" data-area="r-1"></div>
@@ -33,12 +39,13 @@
             <div id="r-9" data-area="r-9"></div>
         </div>
 
-        <div class="aside">b</div>
-        <div class="Viktiga-Knappar">
+        <div id="aside2">b</div>
+        <div id="Viktiga-Knappar">
             <button onclick="Starta()">Starta</button>
             <button onclick="Pause()">Pausa</button>
             <button onclick="Stängav()">Stäng av</button>
             <p>Poäng: <span id="Poäng">0</span></p>
+            <p>HP: <span id="hp">3</span></p>
             
            
         </div>

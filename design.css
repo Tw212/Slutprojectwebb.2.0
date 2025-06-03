@@ -1,19 +1,26 @@
 @import "Färger.css";
 .container{
     height: 100vh;
+    background-color: var(--primary-color);
     display: flex;
     display: grid;
     grid-template-columns: auto auto 10%;
-    grid-template-rows: 100px 70px 1fr;
+    grid-template-rows: 100px 70px 1fr 100px;
     grid-template-areas: 
     "header header header"
     ". . aside"
-    "main main2 aside";
+    "main main2 aside"
+    "footer footer footer";
 }
+body{
+    background: radial-gradient(circle,rgba(0, 47, 108, 1) 10%, #eddd53 100%);
+}
+
 .header{
     grid-area: header;
-    background: #2A7B9B;
-    background: radial-gradient(circle,rgba(42, 123, 155, 1) 0%, rgba(237, 221, 83, 1) 100%);
+    /*background: var(--Secundary-color);*/
+    background: #002F6C;
+    background: radial-gradient(closest-side at center,rgba(0, 47, 108, 1) 60%, rgba(237, 221, 83, 1) 120%);
     display: flex;
     
     justify-content: space-evenly;
@@ -30,6 +37,7 @@
 
 .main{
     grid-area: main;
+    color: var(--Footer-color);
 
 }
 .main img{
@@ -41,6 +49,15 @@
 
 .main2{
     grid-area: main2;
+}
+.main2 img{
+    width: 100%;
+}
+.footer{
+    grid-area: footer;
+    background: #002F6C;
+    color: var(--Footer-color);
+    
 }
 #text1{
     display: none;
@@ -54,10 +71,11 @@
 
 .aside{
     grid-area: aside;
+    overflow: hidden;
 }
 .aside img{
     width: 100%;
-    height: 100%;
+    height: 40%;
 }
 #sidor{
     list-style-type: none;
@@ -78,7 +96,7 @@
     display: none;
     border: 3px solid var(--Footer-color);
     box-shadow: 5px 5px 5px var(--Footer-color);
-    height: 500px;
+    height: 520px;
     width: 250px;
     margin-left: 25%;
     background-color: var(--primary-color);
@@ -87,18 +105,39 @@
 }
 
 .innre-kundkassa{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    
     width: 100%;
     height: 100%;
+    margin-bottom: 70px;
+}
+
+#Pr{
+    padding-top: 170px;
+}
+#Su{
+    padding-top: 170px;
+}
+#x{
+    float: right;
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+#betala{
+    float: right;
+}
+#Namnk{
+    display: none;
+}
+#lössenordk{
+    display: none;
 }
 
 
 
 .Flex-Mat{
     height: 100vh;
+    background-color: var(--primary-color);
     display: flex;
     display: grid;
     grid-template-columns: auto auto 10%;
@@ -237,12 +276,14 @@
 
 .Spel{
     height: 100vh;
+    background-color: var(--primary-color);
     display: flex;
     display: grid;
     grid-template-columns: auto auto auto 10%;
-    grid-template-rows: 100px auto auto auto 100px;
+    grid-template-rows: 100px 150px 100px 100px 100px 100px;
     grid-template-areas: 
     "header header header header"
+    ". . . ."
     "Spelblock Spelblock Spelblock reklam"
     "Spelblock Spelblock Spelblock reklam"
     "Spelblock Spelblock Spelblock reklam"
@@ -250,11 +291,10 @@
 
 }
 
-.Spel-block{
-    margin-top: 150px;
+#Spel-block{
+    
     margin-left: 20px;
     grid-area: Spelblock;
-    border: 1px black;
     display: grid;
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
@@ -265,39 +305,48 @@
 }
 #r-1{
     grid-area: r-1;
-    border: 1px solid black;
+    border: 3px solid var(--Secundary-color);
+    border-radius: 10px;
 }
 #r-2{
     grid-area: r-2;
-    border: 1px solid black;
+    border: 3px solid var(--Secundary-color);
+    border-radius: 10px;
 }
 #r-3{
     grid-area: r-3;
-    border: 1px solid black;
+    border: 3px solid var(--Secundary-color);
+    border-radius: 10px;
 }
 #r-4{
     grid-area: r-4;
-    border: 1px solid black;
+    border: 3px solid var(--Secundary-color);
+    border-radius: 10px;
 }
 #r-5{
     grid-area: r-5;
-    border: 1px solid black;
+    border: 3px solid var(--Secundary-color);
+    border-radius: 10px;
 }
 #r-6{
     grid-area: r-6;
-    border: 1px solid black;
+    border: 3px solid var(--Secundary-color);
+    border-radius: 10px;
 }
 #r-7{
     grid-area: r-7;
-    border: 1px solid black;
+    border: 3px solid var(--Secundary-color);
+    border-radius: 10px;
 }
 #r-8{
     grid-area: r-8;
-    border: 1px solid black;
+    border: 3px solid var(--Secundary-color);
+    border-radius: 10px;
 }
 #r-9{
     grid-area: r-9;
-    border: 1px solid black;
+    border: 3px solid var(--Secundary-color);
+    border-radius: 10px;
 }
 #dbild{
     width: 50px;
@@ -307,12 +356,15 @@
     width: 50px;
     display: none;
 }
-.Viktiga-Knappar{
+#Viktiga-Knappar{
+    margin-top: 50px;
+    margin-left: 20px;
     grid-area: main2s;
 }
-.aside{
+#aside2{
     grid-area: reklam;
 }
+
 
 
 .L-a{
@@ -346,6 +398,7 @@
 .G-Skappa{
     height: 100vh;
     display: grid;
+    background-color: var(--primary-color);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 700px auto;
     grid-template-areas: 
@@ -356,7 +409,7 @@
 #bodys{
     background: linear-gradient(0deg,rgba(149, 195, 34, 1) 0%, rgba(253, 45, 76, 1) 100%);
 }
-.headerg{
+#headerg{
     grid-area: Headerg;
     font-size: 20px;
     text-align: center;
@@ -365,7 +418,18 @@
     
     
 }
-.maing{
+#s h2 i{
+    float: left;
+    color: black;
+    
+}
+#s{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#maing{
+    margin-top: 100px;
     grid-area: maing;
     background-color: white;
     text-align: center;
