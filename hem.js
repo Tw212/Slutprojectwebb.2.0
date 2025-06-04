@@ -21,21 +21,11 @@ function Menu(){
     }
 }
 
-
-
-let o = true;
-let u = true;
-let Pris1 = 100;
-let Pris2 = 1000;
-
-function Läggtill1(){
-    if(o){
-        document.getElementById("Priskassa").innerHTML = Pris1;
-    }
+function Logut(){
+    window.location.href = "logi.html";
 }
 
-function Läggtill2(){
-    if(u){
-        document.getElementById("Priskassa").innerHTML = Pris2;
-    }
+
+function Darkmode(){
+    
 }

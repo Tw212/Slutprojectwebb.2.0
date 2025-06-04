@@ -78,7 +78,6 @@ body{
     height: 40%;
 }
 #sidor{
-    list-style-type: none;
     display: none;
     background-color: #eeee;
     box-shadow: 2px 2px 2px grey;
@@ -90,6 +89,14 @@ body{
 }
 #sidor li{
     margin-top: 20px;
+    
+}
+#sidor ol{
+     list-style-type: none;
+}
+#sidor a{
+    text-decoration: none;
+    color: black;
 }
 
 #Kundkassa{
@@ -132,6 +139,9 @@ body{
 #lössenordk{
     display: none;
 }
+#skickain{
+    display: none;
+}
 
 
 
@@ -148,21 +158,19 @@ body{
     
 }
 
-.Mat-main{
+
+#Mat-main{
     grid-area: main;
 }
-.Mat-footer{
-    grid-area: footer;
-}
 
-.Mat-main table{
+#Mat-main table{
     border-spacing: 0;
     width: 100% !important;
     text-align: center;
     margin-top: 50px;
     border: 1px solid var(--Secundary-color);
 }
-.Mat-main thead{
+#Mat-main thead{
     width: 100%;
     background-color: var(--Footer-color);
 }

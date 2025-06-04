@@ -17,12 +17,15 @@ let a = true;
 function Menu(){
     if(a){
         document.getElementById("sidor").style.display = "block";
-        document.getElementById("Mat-tabel").style.display = "none"
+        document.getElementById("Mat-main").style.display = "none"
         a = false
     }
     else{
         document.getElementById("sidor").style.display = "none";
-        document.getElementById("Mat-tabel").style.display = ""
+        document.getElementById("Mat-main").style.display = ""
         a = true
     }
+}
+function Logut(){
+    window.location.href = "logi.html";
 }

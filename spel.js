@@ -104,3 +104,7 @@ function Menu(){
         a = true
     }
 }
+
+function Logut(){
+    window.location.href = "logi.html";
+}

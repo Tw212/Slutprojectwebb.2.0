@@ -68,4 +68,9 @@ function Betala(){
         document.getElementById("betala").style.display="none"
         document.getElementById("Namnk").style.display="block"
         document.getElementById("lössenordk").style.display="block"
+        document.getElementById("skickain").style.display="block"
 }
+function Skickain(){
+    window.location.href = "logi.html";
+}
+
