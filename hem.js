@@ -25,7 +25,3 @@ function Logut(){
     window.location.href = "logi.html";
 }
 
-
-function Darkmode(){
-    
-}

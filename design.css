@@ -37,7 +37,7 @@ body{
 
 .main{
     grid-area: main;
-    color: var(--Footer-color);
+    color: black;
 
 }
 .main img{
@@ -55,8 +55,8 @@ body{
 }
 .footer{
     grid-area: footer;
-    background: #002F6C;
-    color: var(--Footer-color);
+    background: var(--Footer-color);
+    color: black;
     
 }
 #text1{
